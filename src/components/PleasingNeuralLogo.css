@@ -1,0 +1,66 @@
+/* src/components/PleasingNeuralLogo.css */
+
+/* Keyframe for the main node's "breathing" effect */
+@keyframes pulse-main {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframe for the smaller node's subtle pulse */
+@keyframes pulse-satellite {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Applying the animations to the SVG elements via their class names */
+.node-main {
+  /* The transform-origin needs to be set to the element's center */
+  transform-origin: 5px 50px; 
+  animation: pulse-main 4s ease-in-out infinite;
+}
+
+.node-satellite {
+  transform-origin: 25px 85px;
+  /* A slightly different timing makes the animation feel less mechanical */
+  animation: pulse-satellite 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Animate the path drawing itself for a loading state */
+.neural-path.draw-in {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw-in 2s ease-out forwards;
+}
+
+@keyframes draw-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Add a subtle rotation to the satellite node */
+.rotate-orbit {
+  animation: rotate-orbit 6s linear infinite;
+}
+@keyframes rotate-orbit {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
