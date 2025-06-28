@@ -124,7 +124,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 Try COPE: [https://cope.xyz](https://cope.xyz)
 
 ## Screenshots
-![COPE Dashboard](https://github.com/user-attachments/assets/1c55d6c2-a148-45a3-a9e2-ed7b0be309dd)
+![Image](https://github.com/user-attachments/assets/95341e19-ba74-47c5-b32b-2a7974d87802)
 
 
 
