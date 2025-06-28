@@ -121,7 +121,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Demo
 
-Try COPE: [https://cope.xyz](cope-ivory.vercel.app/)
+Try COPE: [cope-ivory.vercel.app](cope-ivory.vercel.app)
 
 ## Screenshots
 ![Image](https://github.com/user-attachments/assets/95341e19-ba74-47c5-b32b-2a7974d87802)
