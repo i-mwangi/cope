@@ -1,6 +1,6 @@
 import { Droplets, Plus, Bot, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import WalletConnectWrapper from '@/components/WalletConnectWrapper';
+import RealWalletConnect from '@/components/RealWalletConnect';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { toast } from 'sonner';
 import { iotaTestnet } from '@/lib/chains';
@@ -174,7 +174,7 @@ const DashboardHeader = () => {
         {/* Right side with wallet connect always visible and hamburger for other options */}
         <div className="flex items-center space-x-4">
           {/* Wallet Connect button always visible */}
-          <WalletConnectWrapper />
+          <RealWalletConnect />
 
           <div className="hidden md:flex items-center space-x-4">
             <ActionButtons />
